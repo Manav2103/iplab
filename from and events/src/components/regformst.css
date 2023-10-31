@@ -1,0 +1,61 @@
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0; /* Change the background color */
+    color: #333; /* Change the text color */
+    font-family: Arial, sans-serif; /* Change the font family */
+    font-size: 18px; /* Change the font size */
+   }
+   h1 {
+    text-align: center;
+    color: #555; /* Change the heading text color */
+   }
+   div {
+    margin: 15px;
+   }
+   label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #666; /* Change label text color */
+   }
+   input[type="text"],
+   input[type="email"],
+   select,
+   textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+   border-radius: 4px;
+    font-size: 16px; /* Change the input font size */
+   }
+   textarea {
+    resize: vertical;
+   }
+   input[type="checkbox"] {
+    margin-right: 5px;
+   }
+   button {
+    padding: 10px 20px;
+    background-color: #5a027d; /* Change the button background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px; /* Change the button font size */
+    font-weight: bold; /* Add font weight */
+   }
+   button[type="button"] {
+    background-color: #ff00ae;
+    margin-left: 10px;
+   }
+   button:hover {
+    background-color: #0056b3;
+   }
+   h2 {
+    text-align: center;
+   }
