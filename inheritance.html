@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>JavaScript Class Inheritance</h2>
+<p id="demo"></p>
+<script>
+class Person {
+constructor(name, age) {
+this.name = name;
+this.age = age;
+}
+atWork() {
+return this.name + " is at work, ";
+}
+atHome() {
+return this.name + " is at home";
+}
+sleeping() {
+return this.name + " is sleeping";
+}
+}
+class SoftwareEngineer extends Person {
+constructor(name, age) {
+super(name, age);
+}
+profession() {
+return this.name +
+" is a Software Engineer";
+}
+doTasks() {
+return super.atWork() + this.profession();
+}
+}
+function display(content) {
+console.log(content);
+}
+const character =
+new SoftwareEngineer("Piyush", 30);
+display(character.profession());
+display(character.atHome());
+display(character.doTasks());
+</script>
+</body>
+</html>

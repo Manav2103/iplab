@@ -1,0 +1,19 @@
+<html>
+<head>
+<title>iterator</title>
+</head>
+<body>
+<script>
+//iterator
+const iterableArray = [5, 10, 15, 20, 25];
+const iterator = iterableArray[Symbol.iterator]();
+let sum = 0;
+let iterationResult = iterator.next();
+while (!iterationResult.done) {
+sum += iterationResult.value;
+iterationResult = iterator.next();
+}
+console.log("Sum of array elements:", sum);
+</script>
+</body>
+</html>
