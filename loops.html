@@ -1,0 +1,57 @@
+<html>
+<head>
+ <title>various types of loops</title>
+</head>
+<body>
+<script>
+ loopdemo()
+ function loopdemo()
+ {
+ //for loop
+ console.log("using for loop:")
+ for(let i=1;i<10;i++)
+ {
+ console.log(i);
+ }
+ //while loop
+ console.log("Using while loop:");
+ let count = 0;
+ while (count < 3) {
+ console.log(count);
+ count++;
+ }
+ //do while loop
+ console.log("using do while loop:")
+ let x=4;
+ do{
+ console.log("x= "+x)
+ x--;
+ }while(x<4 && x>0);
+ //for in loop
+ console.log("using for in loop:")
+ const identity={
+ name:"Piyush",
+ age:21,
+ city:"Mumbai"
+ }
+ for (const key in identity){
+ console.log(`${key}: ${identity[key]}`);
+ }
+ //for of loop
+ console.log("using for of loop:")
+ const arr=[1,2,3,4]
+ for (const x of arr)
+ {
+ console.log(x)
+ }
+ //for each loop
+ console.log("using for each loop:")
+ const clr=["red","violet","green"]
+ clr.forEach((x,index)=>
+ {
+ console.log('Color '+(index+1)+':'+x);
+ })
+ }
+</script>
+</body>
+</html>
